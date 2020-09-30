@@ -1,0 +1,125 @@
+:root{
+    --color-blue: #2b81ac;
+    --color-body: #3399cc;
+    --color-white: #fff;
+    --color-text: rgba(255, 255, 255, .7);
+}
+
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+ul,li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+body,html{
+    min-height: 100%;
+    width: 100%;
+}
+html{
+    border: 25px solid var(--color-blue);
+}
+body{
+    background: var(--color-body);
+    color: var(--color-white);
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+.header{
+    padding: 35px 0;
+}
+.header__title{
+    font-size: 32px;
+    display: inline-block;
+}
+.inner__item{
+    border: 3px solid var(--color-white); 
+    background: var(--color-white);
+}
+.inner__item{
+    font-size: 0;
+    text-align: center;
+}
+.inner__item:hover > .inner__list{
+    opacity: .5;
+}
+.inner__list{
+    font-size: 24px;
+    display: inline-block;
+    border: 3px solid var(--color-white);
+    padding: 30px;
+    transition: all .2s ease;
+}
+.inner__item .inner__list:hover{
+    opacity: 1;
+}
+.inner__list:nth-child(1){
+    background: #3399cc;
+}
+.inner__list:nth-child(2){
+    background: #33cccc;
+}
+.inner__list:nth-child(3){
+    background: #996699;
+}
+.inner__list:nth-child(4){
+    background: #e2674a;
+}
+.inner__list:nth-child(5){
+    background: #ffcc66;
+}
+.inner__list:nth-child(6){
+    background: #99cc99;
+}
+.inner__list:nth-child(7){
+    background: #669999;
+}
+.inner__list:nth-child(8){
+    background: #cc6699;
+}
+.inner__list:nth-child(9){
+    background: #cc6699;
+}
+.inner__list:nth-child(10){
+    background: #cc6699;
+}
+.inner__list:nth-child(11){
+    background: #666699;
+}
+.innet__title{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.inner__text{
+    color: var(--color-text);
+    display: inline-block;
+}
+.inner__text::after{
+    content: '°C';
+}
+.wi{
+    font-size: 45px;
+    vertical-align: middle;
+    color: var(--color-text);
+}
+.wi-sunrise{
+    font-size: 32px;
+    color: rgba(255, 255, 255, 1);
+}
+.footer{
+    padding: 35px 0 130px;
+}
+.footer__text{
+    font-size: 28px;
+}
